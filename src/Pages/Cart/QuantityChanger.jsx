@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlinePlus, AiOutlineLine } from "react-icons/ai";
 import { useDispatch } from "react-redux";
-import { addQuantityByOne, minusQuantityByOne } from "../../Store/slices/cartSlices";
+import { addQuantityByOne, minusQuantityByOne } from "../../Store/slices/CartSlices";
 
 const QuantityChanger = ({ id, quantity }) => {
   const dispatch = useDispatch();

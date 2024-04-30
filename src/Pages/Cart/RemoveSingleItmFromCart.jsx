@@ -1,7 +1,7 @@
 import React from "react";
 import { AiOutlineClose, AiOutlinePlus, AiOutlineLine } from "react-icons/ai";
 import { useDispatch } from "react-redux";
-import { removeSelectedItemFromCart } from "../../Store/slices/cartSlices";
+import { removeSelectedItemFromCart } from "../../Store/slices/CartSlices";
 import useToast from "../../Hooks/useToast";
 
 const RemoveSingleItmFromCart = ({ id }) => {

@@ -8,7 +8,7 @@ import RelatedProduct from "./RelatedProduct";
 import {
   updateCartItems,
   addQuantityByOne,
-} from "../../Store/slices/cartSlices";
+} from "../../Store/slices/CartSlices";
 import usePageTitle from "../../Hooks/usePageTitle";
 import SizeOptionUi from "./SizeOptionUi";
 import useToast from "../../Hooks/useToast";

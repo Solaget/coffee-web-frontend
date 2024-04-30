@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   removeSelectedItemFromCart,
   updateCartItems,
-} from "../../Store/slices/cartSlices";
+} from "../../Store/slices/CartSlices";
 import useToast from "../../Hooks/useToast";
 import QuantityChanger from "./QuantityChanger";
 import RemoveSingleItmFromCart from "./RemoveSingleItmFromCart";
