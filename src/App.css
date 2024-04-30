@@ -7,7 +7,7 @@ p{
 }
 
 body::-webkit-scrollbar{
-    width: 10px;
+    width: 9px;
 }
 body::-webkit-scrollbar-thumb{
     background: var(--main_clr);
