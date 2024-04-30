@@ -1,0 +1,338 @@
+#checkout-page {
+  min-height: fit-content;
+  /* min-height: 100vh; */
+}
+
+#checkout-page .checkoutpage-layout {
+  width: 100%;
+  height: fit-content;
+  padding: 60px 110px 150px 110px;
+  /* padding-bottom: 200px; */
+}
+#checkout-page .checkoutpage-layout .checkout-page-header {
+  width: 100%;
+  text-align: center;
+}
+#checkout-page .checkoutpage-layout .checkout-page-header h3 {
+  text-transform: uppercase;
+  font-size: clamp(16px, 5vw, 26px);
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+#checkout-page .checkoutpage-layout .main-content {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  #checkout-page .checkoutpage-layout {
+    width: 100%;
+    height: fit-content;
+    padding: 60px 45px 150px 45px;
+    /* padding-bottom: 200px; */
+  }
+}
+@media (max-width: 650px) {
+  #checkout-page .checkoutpage-layout {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 20px 100px 20px;
+    /* padding-bottom: 200px; */
+  }
+  #checkout-page .checkoutpage-layout .main-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .content-header
+  .content-header-title {
+  font-size: clamp(16px, 5vw, 25px);
+  font-weight: 500;
+}
+#checkout-page .checkoutpage-layout .main-content .left-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background: #000; */
+}
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .left-content
+  .left-content-wrap {
+  width: 100%;
+}
+.main-content .left-content .left-content-wrap .all-form-container {
+  width: 100%;
+}
+.main-content .left-content .left-content-wrap .all-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: fit-content;
+}
+.main-content
+  .left-content
+  .left-content-wrap
+  .all-form-container
+  form
+  .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.main-content
+  .left-content
+  .left-content-wrap
+  .all-form-container
+  form
+  .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.main-content
+  .left-content
+  .left-content-wrap
+  .all-form-container
+  form
+  .form-group
+  label {
+  margin-bottom: 5px;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 0.25s;
+}
+.main-content
+  .left-content
+  .left-content-wrap
+  .all-form-container
+  form
+  .form-group
+  :is(input, select) {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 12px 15px;
+  background: whitesmoke;
+  font-size: 17px;
+  font-weight: 600;
+  &:focus {
+    background: rgb(237, 237, 237);
+    outline: 1px rgba(108, 108, 108, 0.406) solid;
+  }
+
+  &::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+form > button {
+  width: 100%;
+  padding: 15px;
+  background: var(--main_clr);
+  color: white;
+  cursor: pointer;
+}
+
+#checkout-page .checkoutpage-layout .main-content .right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* background: rebeccapurple; */
+}
+
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container {
+  width: 100%;
+  /* height: fit-content; */
+  padding: 10px;
+}
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body
+  ul:first-child {
+  width: 100%;
+  background: whitesmoke;
+  padding: 15px;
+}
+
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tbody {
+  /* margin-top: 20px; */
+}
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  thead
+  td {
+  font-size: 18px;
+  font-weight: 600;
+}
+#checkout-page
+  .checkoutpage-layout
+  .main-content
+  .right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: start;
+  padding: 15px 0px;
+  /* border-bottom: 1px rgb(172, 172, 172) solid; */
+}
+
+.right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tbody
+  tr
+  .product-detail {
+}
+
+.right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tbody
+  tr
+  .product-detail
+  .product-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tbody
+  tr
+  .product-detail
+  .product-quantity {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.right-content
+  .top-container
+  .top-container-body
+  ul:first-child
+  table
+  tbody
+  tr
+  .product-subtotal {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* ############ */
+
+.right-content .top-container .top-container-body ul:last-child {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 15px;
+  /* background: rebeccapurple; */
+}
+
+.right-content .top-container .top-container-body ul:last-child > li {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-content .top-container .top-container-body ul:last-child > li h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.right-content .top-container .top-container-body ul:last-child > li span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* #### bottom container ##### */
+
+.right-content .bottom-container {
+  width: 100%;
+}
+
+.right-content .bottom-container button {
+  width: 100%;
+  padding: 13px;
+  cursor: pointer;
+  background: var(--main_clr);
+  color: white;
+  transition: 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    background: black;
+    color: var(--main_clr);
+  }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+/* .page-container{
+  margin-top: 160px;
+} */
+
+@font-face {
+  font-family: coffee;
+  src: url(../Fonts/I-Need-Coffee.ttf);
+}
+:root {
+    /* Main colors */
+  --main_clr: #db9354;
+
+  /* Some color for text and for background */
+  --white: #ffff;
+  --dark_white: #f6f6f7;
+  --dark: #000;
+
+  
+  /* Text colors */
+  --text: #040404;
+  --label: rgb(66, 66, 66);
+  --disabled: #e1dfe9;
+
+  /* Some text size for text */
+  /* Laarge */
+  --large-l: 56px;
+  --large-m: 48px;
+  --large-s: 35px;
+
+  /* Medium */
+  --medium-l: 24px;
+  --medium-m: 20px;
+  --medium-s: 18px;
+
+  /* Small length */
+  --small-l: 13px;
+  --small-m: 10px;
+  --small-s: 8px;
+}
+
+svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertical-line {
+  width: 2px;
+  height: 35px;
+  background: var(--main_clr);
+  margin: 20px 0px;
+}

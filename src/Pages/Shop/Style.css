@@ -1,0 +1,93 @@
+#shop-page{
+}
+.shop-page-layout{
+    padding: 45px;
+
+    @media(max-width: 500px){
+        padding: 20px 20px 60px 20px;
+    }
+}
+.shop-page-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+}
+
+.shop-page-content .shop-page-header{
+    width: 100%;
+    text-align: center;
+}
+.shop-page-content .shop-page-header h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.shop-page-content .main-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+.shop-page-content .main-content .product-list-header{
+    display: flex;
+    justify-content: space-between;
+}
+.shop-page-content .main-content .product-list-header .sort-filter-wrapper select{
+    background: transparent;
+    width: 210px;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.shop-page-content .main-content .product-wrapper .product-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.shop-page-content .main-content .product-wrapper .product-list #product-card{
+    height: 520px;
+}
+
+
+@media (max-width: 1100px) {
+ 
+    .shop-page-content .main-content .product-wrapper .product-list #product-card{
+        height: 400px;
+    }
+    
+}
+
+@media (min-width: 420px) and (max-width: 830px) {
+  
+    .shop-page-content .main-content .product-wrapper .product-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    .shop-page-content .main-content .product-wrapper .product-list #product-card{
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 420px) {
+    .shop-page-content .main-content .product-wrapper .product-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 15px;
+        column-gap: 15px;
+    }
+    
+    .shop-page-content .main-content .product-wrapper .product-list #product-card{
+        height: 500px;
+    }
+    
+}

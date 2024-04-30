@@ -1,0 +1,119 @@
+#error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#error-page > #main-nav {
+  position: fixed;
+  top: 0px;
+}
+
+#error-page .error-page-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 20px;
+}
+#error-page .error-page-layout .top {
+}
+#error-page .error-page-layout .top .top-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#error-page .error-page-content-text h2 {
+  font-size: clamp(75px, 10vw, 160px);
+  line-height: 0px;
+  max-height: fit-content;
+  font-weight: 900;
+  color: rgb(147, 90, 16);
+}
+#error-page .middle-content {
+  z-index: -100;
+}
+
+#error-page .middle-content img {
+  height: 260px;
+  transform: rotate(-5deg);
+  user-select: none;
+  animation: animate infinite 10s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+#error-page .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#error-page .bottom .bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#error-page .bottom .bottom-content h2 {
+  font-size: clamp(25px, 8vw, 80px);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#error-page .bottom .bottom-content p {
+  font-size: var(--medium-s);
+  text-align: center;
+}
+
+#error-page .bottom .bottom-content button {
+  padding: 15px 40px;
+  background: black;
+  color: var(--main_clr);
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.4s;
+  text-transform: uppercase;
+  &:hover {
+    color: black;
+    background: var(--main_clr);
+  }
+}
+
+
+@media(min-width: 450px) and (max-width: 700px) {
+  #error-page .error-page-layout {
+    margin-top: 60px;
+  }
+#error-page .middle-content img {
+  height: 180px;
+}
+}
+@media(max-width: 450px)  {
+  #error-page .error-page-layout {
+    margin-top: 60px;
+  }
+  #error-page .error-page-layout .top .top-content {
+    gap: 10px;
+  }
+  
+  #error-page .middle-content img {
+    height: 140px;
+  }
+  }

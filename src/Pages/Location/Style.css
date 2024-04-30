@@ -1,0 +1,142 @@
+#location-page{
+    min-height: 100vh;
+}
+.location-content-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.location-content-wrapper .location-content:nth-child(even){
+    flex-direction: row-reverse;
+}
+.location-content-wrapper .location-content:nth-child(odd){
+    flex-direction: row;
+}
+.location-content{
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+
+.location-content .left-content-wrapper{
+    width: 50%;
+    min-height: 100%;
+    overflow: hidden;
+}
+.location-content .left-content-wrapper .location-poster-wrapper{
+    height: 100%;
+    width: 100%;
+}
+.location-content .left-content-wrapper .location-poster-wrapper img{
+    min-height: 105%;
+    min-width: 105%;
+    max-width: 110%;
+    max-height: 110%;
+    object-fit: cover;
+    transition: 1s;
+}
+.location-content:hover > .left-content-wrapper .location-poster-wrapper img{
+    transform: scale(1.2);
+}
+.location-content .right-content-wrppaer{
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location-content .right-content-wrppaer .location-detail-wrapper{
+
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .actions{
+    margin-top: 25px;
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .actions button{
+    padding: 10px 30px;
+    border: var(--main_clr) solid 2px;
+    font-size: .9rem;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    transition: .4s;
+    font-weight: 500;
+    &:hover{
+        background: var(--main_clr);
+        color: white;
+    }
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .mainAddress{
+    margin-bottom: 20px;
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .mainAddress h3{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--main_clr);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+
+}
+
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .subCity{
+    margin-bottom: 20px;
+}
+.location-content .right-content-wrppaer .location-detail-wrapper .detail-layout .subCity h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+
+}
+
+ .location-detail-wrapper .detail-layout .location-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .location-detail-wrapper .detail-layout .location-detail p{
+    font-size: 1.1rem;
+ }
+ .location-detail-wrapper .detail-layout .location-detail .phone-no{
+    margin-top: 20px;
+ }
+
+
+@media (max-width: 700px){
+    .location-content-wrapper .location-content:nth-child(even){
+        flex-direction: column;
+    }
+    .location-content-wrapper .location-content:nth-child(odd){
+        flex-direction: column;
+    }
+    .location-content{
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+    .location-content .left-content-wrapper{
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+    .location-content .left-content-wrapper .location-poster-wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .location-content .right-content-wrppaer{
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

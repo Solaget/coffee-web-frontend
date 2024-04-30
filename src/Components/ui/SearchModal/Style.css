@@ -1,0 +1,88 @@
+#search-modal {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  background: var(--dark);
+  color: white;
+  z-index: 1100;
+  animation: searchModalInTransition .1s ease-in-out;
+}
+@keyframes searchModalInTransition {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#search-modal .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#search-modal .content-wrapper .search-bar {
+  position: relative;
+  border-bottom: 2px white solid;
+  width: 400px;
+
+}
+
+@media (max-width: 600px) {
+
+  #search-modal .content-wrapper {
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+#search-modal .content-wrapper .search-bar {
+  width: 80%;
+  position: relative;
+  border-bottom: 2px white solid;
+  padding: 0px 30px;
+}
+}
+
+#search-modal .content-wrapper .search-bar input {
+  background: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: clamp(25px, 5vw, 50px);
+  width: 100%;
+
+  &::placeholder {
+    color: white;
+  }
+}
+#search-modal .content-wrapper .help-text h3 {
+  color: white;
+  font-size: var(--medium-s);
+  font-weight: 400;
+}
+
+#search-modal .close-search-modal {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 45px;
+  cursor: pointer;
+}

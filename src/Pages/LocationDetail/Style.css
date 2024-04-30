@@ -1,0 +1,145 @@
+#location-detail-page {
+  min-height: 100vh;
+}
+
+.location-detail-page-layout {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 100px;
+}
+.location-detail-hero {
+  min-height: 100vh;
+}
+.location-detail-hero .content-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  /* background: #000; */
+}
+.location-detail-hero .content-wrap .left-content-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+.location-detail-hero .content-wrap .left-content-wrap .poster-img-wrap {
+  height: 100%;
+}
+.location-detail-hero .content-wrap .left-content-wrap .poster-img-wrap img {
+  min-height: 105%;
+  min-width: 105%;
+  max-width: 110%;
+  max-height: 110%;
+  object-fit: cover;
+  transition: 2s;
+}
+.location-detail-hero:hover .left-content-wrap .poster-img-wrap img {
+  transform: scale(1.2);
+
+}
+
+/* Right */
+.location-detail-hero .content-wrap .right-content-wrap {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.location-detail-hero .content-wrap .right-content-wrap .detail-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .main-title-wrap {
+  margin-bottom: 20px;
+}
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .main-title-wrap
+  h3 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .sub-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .sub-title-wrap
+  p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .phone-number-wrap {
+  margin-top: 50px;
+}
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .phone-number-wrap
+  p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.location-detail-hero .content-wrap .right-content-wrap .detail-wrap .actions {
+  margin-top: 40px;
+}
+.location-detail-hero
+  .content-wrap
+  .right-content-wrap
+  .detail-wrap
+  .actions
+  button {
+  padding: 14px 40px;
+  background: black;
+  color: var(--main_clr);
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: var(--main_clr);
+    color: white;
+  }
+}
+
+.location-detail-hero .content-wrap .right-content-wrap .detail-wrap .opening-date-hour-wrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.location-detail-hero .content-wrap .right-content-wrap .detail-wrap .opening-date-hour-wrap .opening-days{
+    font-size: 1.2rem;
+}
+.location-detail-hero .content-wrap .right-content-wrap .detail-wrap .opening-date-hour-wrap .opening-hours{
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
