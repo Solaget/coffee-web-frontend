@@ -21,7 +21,7 @@ import {
   updateCartTotal,
   updateCartItemsFromLocalStorage,
   saveCartInLocalStorage,
-} from "./Store/slices/CartSlices.js";
+} from "./Store/slices/cartSlices.js";
 import ProtectedRoute from "./Utils/ProtectedRoute";
 import ProtectedLayoutSearchPage from "./Utils/ProtectedLayoutSearchPage";
 function App() {
