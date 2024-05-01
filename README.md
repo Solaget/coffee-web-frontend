@@ -30,3 +30,6 @@ Insert screenshots or gifs showcasing your website here.
 
 ```bash
 git clone https://github.com/your-username/your-repository.git
+
+Install dependencies:cd your-repository
+npm installRun the application:npm startOpen your browser and navigate to http://localhost:3000 to view the website.ContributingContributions are welcome! Feel free to fork the repository and submit pull requests to suggest improvements, fix bugs, or add new features
