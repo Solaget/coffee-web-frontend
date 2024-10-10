@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import "./Style.css";
 import { CiSearch } from "react-icons/ci";
-import { CiMenuFries } from "react-icons/ci";
 import { PiHandbagThin } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
 import { openSearchModal } from "../../../Store/slices/uiSlices";
 import { Link, NavLink } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 const Nav = () => {
   const dispatch = useDispatch();
@@ -20,9 +20,8 @@ const Nav = () => {
     <nav id="main-nav" ref={navRef}>
       <div className="nav-contents">
         <div className="nav-layout">
-          <div className="nav-toggle">
-            <CiMenuFries />
-          </div>
+          <MobileNav />
+
           <div className="nav-left">
             <ul className="left-nav-links">
               <li className="link">
@@ -37,7 +36,7 @@ const Nav = () => {
             </ul>
           </div>
           <div className="nav-middle">
-            <Link to={'/'}  className="logo-wrapper">
+            <Link to={"/"} className="logo-wrapper">
               <img src={logo} alt="" />
             </Link>
           </div>
@@ -58,9 +57,9 @@ const Nav = () => {
 
           <div className="right-menu-for-mobile">
             <span className="cart-btn">
-              <button>
+              <Link to={"/locations"}>
                 <PiHandbagThin />
-              </button>
+              </Link>
               <span className="cart-counter">{cartSize}</span>
             </span>
             <span className="search-btn">
