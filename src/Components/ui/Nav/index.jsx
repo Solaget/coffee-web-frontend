@@ -58,7 +58,7 @@ const Nav = () => {
           <div className="right-menu-for-mobile">
             <span className="cart-btn">
               <button>
-                <Link to={"/locations"}>
+                <Link to={"/cart"}>
                   <PiHandbagThin />
                 </Link>
               </button>

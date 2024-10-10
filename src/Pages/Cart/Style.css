@@ -2,11 +2,11 @@
   min-height: 70vh;
 }
 .cart-page-layout {
-  
+
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px 120px 120px 120px;
+  padding: 80px 120px 120px 120px;
   
 }
 
