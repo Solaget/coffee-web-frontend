@@ -1,3 +1,16 @@
+import productOne from "../../public/images/products/product-five.jpg";
+import productTwo from "../../public/images/products/product-eleven.jpg";
+import productThree from "../../public/images/products/product-four.jpg";
+import productFour from "../../public/images/products/product-nine.jpg";
+import productFive from "../../public/images/products/product-six.jpg";
+import productSix from "../../public/images/products/product-ten.jpg";
+import productSeven from "../../public/images/products/product-three.jpg";
+import productEight from "../../public/images/products/product-tweelve.jpg";
+import productTen from "../../public/images/products/product-two.jpg";
+import productEleven from "../../public/images/products/product-eight.jpg";
+import productTwelve from "../../public/images/products/product-one.jpg";
+import productThirty from "../../public/images/products/product-eleven.jpg";
+
 const products = [
   {
     category: "coffee",
@@ -13,7 +26,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 5,
-    img_Src: "../../public/images/products/product-five.jpg",
+    img_Src: productOne,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -23,7 +36,6 @@ const products = [
       ALTITUDE: "1800-2200 meters",
     },
   },
-
   {
     category: "coffee",
     title: "Colombia Dark Roast",
@@ -36,7 +48,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-eleven.jpg",
+    img_Src: productTwo,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -58,7 +70,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-four.jpg",
+    img_Src: productThree,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -80,7 +92,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-nine.jpg",
+    img_Src: productFour,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -102,8 +114,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-six.jpg",
-
+    img_Src: productFive,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -125,7 +136,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-ten.jpg",
+    img_Src: productSix,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -147,7 +158,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-three.jpg",
+    img_Src: productSeven,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -169,7 +180,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-tweelve.jpg",
+    img_Src: productEight,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -191,7 +202,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-two.jpg",
+    img_Src: productTen,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -213,7 +224,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-eight.jpg",
+    img_Src: productEleven,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -235,7 +246,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-one.jpg",
+    img_Src: productTwelve,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
@@ -257,7 +268,7 @@ const products = [
     ],
     available_roast: ["Whole bean", "Mild Roast", "Dark Roast"],
     Cart_Limit: 10,
-    img_Src: "../../public/images/products/product-eleven.jpg",
+    img_Src: productThirty,
     additonal_information: {
       size: [500, 800],
       Roast: "Whole Bean, Mild Roast, Dark Roast",
