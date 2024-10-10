@@ -7,7 +7,6 @@ Welcome to our Coffee Shop website! This project is a frontend showcase built us
 - **Responsive Design**: Enjoy a seamless experience across various devices, from desktops to mobile phones.
 - **Product Catalog**: Explore our wide range of coffee products, each with detailed descriptions and images.
 - **Shopping Cart**: Easily manage your purchases with our intuitive shopping cart feature. Add items, remove them, or update quantities with just a few clicks.
-- **Checkout Process**: Complete your order hassle-free with our streamlined checkout process.
 - **Dynamic UI**: Experience smooth transitions and interactive elements that enhance user engagement.
 - **Beautifully Styled**: Immerse yourself in a visually stunning design that highlights the elegance of coffee culture.
 
@@ -17,8 +16,7 @@ Welcome to our Coffee Shop website! This project is a frontend showcase built us
 - **CSS**: Custom styling to create a visually appealing and cohesive design.
 - **React Router**: Implement navigation and routing within the application.
 - **Redux**: Manage application state efficiently, especially for managing the shopping cart.
-- **FontAwesome**: Add beautiful icons to enhance the user experience.
-- **Axios**: Facilitate HTTP requests to interact with a backend API (if applicable).
+
 
 ## Preview
 
