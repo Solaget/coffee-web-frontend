@@ -57,7 +57,7 @@ const Nav = () => {
 
           <div className="right-menu-for-mobile">
             <span className="cart-btn">
-              <Link to={"/locations"}>
+              <Link to={"/cart"}>
                 <PiHandbagThin />
               </Link>
               <span className="cart-counter">{cartSize}</span>
