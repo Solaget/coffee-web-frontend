@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import "./Style.css";
 import { CiSearch } from "react-icons/ci";
+import { CiMenuFries } from "react-icons/ci";
 import { PiHandbagThin } from "react-icons/pi";
 import { useDispatch, useSelector } from "react-redux";
 import { openSearchModal } from "../../../Store/slices/uiSlices";
@@ -21,7 +22,7 @@ const Nav = () => {
       <div className="nav-contents">
         <div className="nav-layout">
           <MobileNav />
-
+          
           <div className="nav-left">
             <ul className="left-nav-links">
               <li className="link">
@@ -57,9 +58,11 @@ const Nav = () => {
 
           <div className="right-menu-for-mobile">
             <span className="cart-btn">
-              <Link to={"/cart"}>
-                <PiHandbagThin />
-              </Link>
+              <button>
+                <Link to={"/locations"}>
+                  <PiHandbagThin />
+                </Link>
+              </button>
               <span className="cart-counter">{cartSize}</span>
             </span>
             <span className="search-btn">
