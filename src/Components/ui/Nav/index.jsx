@@ -22,7 +22,6 @@ const Nav = () => {
       <div className="nav-contents">
         <div className="nav-layout">
           <MobileNav />
-          
           <div className="nav-left">
             <ul className="left-nav-links">
               <li className="link">

@@ -28,7 +28,7 @@ export default function MobileNav() {
   }, []);
 
   return (
-    <div>
+    <div className="mobile-nav">
       <div className="nav-toggle" onClick={toggleNav}>
         <CiMenuFries />
       </div>
@@ -62,59 +62,6 @@ export default function MobileNav() {
         </ul>
       </nav>
 
-      <style jsx>{`
-        .nav-sheet {
-          position: fixed;
-          top: 0;
-          right: -250px;
-          width: 250px;
-          height: 100%;
-          background-color: #fff;
-          box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-          transition: right 0.3s ease-in-out;
-          z-index: 1000;
-        }
-        .nav-sheet.open {
-          right: 0;
-        }
-        .nav-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 20px;
-          border-bottom: 1px solid #eee;
-        }
-        .logo {
-          font-size: 24px;
-          font-weight: bold;
-          color: #4a2c2a;
-        }
-        .close-btn {
-          background: none;
-          border: none;
-          cursor: pointer;
-          padding: 0;
-          color: #333;
-        }
-        .nav-sheet ul {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-        .nav-sheet ul li {
-          padding: 15px 20px;
-          border-bottom: 1px solid #eee;
-        }
-        .nav-sheet ul li a {
-          color: #333;
-          text-decoration: none;
-          font-size: 18px;
-          display: block;
-        }
-        .nav-sheet ul li a:hover {
-          color: #4a2c2a;
-        }
-      `}</style>
     </div>
   );
 }
