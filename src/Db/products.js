@@ -1,15 +1,15 @@
-import productOne from "../../public/images/products/product-five.jpg";
-import productTwo from "../../public/images/products/product-eleven.jpg";
-import productThree from "../../public/images/products/product-four.jpg";
-import productFour from "../../public/images/products/product-nine.jpg";
-import productFive from "../../public/images/products/product-six.jpg";
-import productSix from "../../public/images/products/product-ten.jpg";
-import productSeven from "../../public/images/products/product-three.jpg";
-import productEight from "../../public/images/products/product-tweelve.jpg";
-import productTen from "../../public/images/products/product-two.jpg";
-import productEleven from "../../public/images/products/product-eight.jpg";
-import productTwelve from "../../public/images/products/product-one.jpg";
-import productThirty from "../../public/images/products/product-eleven.jpg";
+import productOne from "../assets/images/Products/product-five.jpg";
+import productTwo from "../assets/images/Products/product-eleven.jpg";
+import productThree from "../assets/images/Products/product-four.jpg";
+import productFour from "../assets/images/Products/product-nine.jpg";
+import productFive from "../assets/images/Products/product-six.jpg";
+import productSix from "../assets/images/Products/product-ten.jpg";
+import productSeven from "../assets/images/Products/product-three.jpg";
+import productEight from "../assets/images/Products/product-tweelve.jpg";
+import productTen from "../assets/images/Products/product-two.jpg";
+import productEleven from "../assets/images/Products/product-eight.jpg";
+import productTwelve from "../assets/images/Products/product-one.jpg";
+import productThirty from "../assets/images/Products/product-eleven.jpg";
 
 const products = [
   {
